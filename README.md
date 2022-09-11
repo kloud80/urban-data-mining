@@ -3,6 +3,6 @@
 
 ***
 # 수업 참여 IDE
-[Pycharm](https://www.jetbrains.com/ko-kr/pycharm/download/ , "pycharm link")
+[Pycharm](https://www.jetbrains.com/ko-kr/pycharm/download/ "pycharm link")
 
-[Colab](https://colab.research.google.com/?hl=ko , "Colab link")
+[Colab](https://colab.research.google.com/?hl=ko, "Colab link")
