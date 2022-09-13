@@ -16,6 +16,10 @@ from xyzservices import TileProvider #타일맵 소스를 네이버로 변경하
 mpl.rc('font', family='NanumGothic') #한글 폰트 적용시
 os.chdir('02 Decision Tree/')
 
+"""
+데이터 : https://www.dropbox.com/s/2zkbcn62yddv959/data.zip?dl=0
+"""
+
 #%%
 
 # %%
