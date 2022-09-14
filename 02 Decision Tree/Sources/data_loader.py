@@ -17,7 +17,7 @@ mpl.rc('font', family='NanumGothic') #한글 폰트 적용시
 os.chdir('02 Decision Tree/')
 
 """
-데이터 : https://www.dropbox.com/s/2zkbcn62yddv959/data.zip?dl=0
+데이터 : https://www.dropbox.com/s/a6ogktjetbbsrnw/data.zip?dl=0
 """
 
 #%%
