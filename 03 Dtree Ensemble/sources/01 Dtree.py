@@ -17,7 +17,7 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 
 mpl.rc('font', family='NanumGothic') #한글 폰트 적용시
-os.chdir('02 Decision Tree/')
+os.chdir('03 Dtree Ensemble/')
 
 """학습용 데이터셋을 불러옴"""
 
@@ -164,13 +164,16 @@ score_tr = tree_clf.score(x, y)
 
 
 dt_dot_data  = export_graphviz(tree_clf,
-                               feature_names=['do', 'de'],
+                               feature_names=['도', '대'],
                                class_names=['low', 'high'],         # 종속변수
                                rounded = True,
                                filled = True)
 
+
+
 gp = Source(dt_dot_data)
-gp.format = 'png'
+
+gp.format = 'svg'
 img = gp.render('dtree_render',view=True)
 
 
@@ -227,6 +230,7 @@ print("F1 Score: {}".format( f1_score(y,y_pred)))
 #%%
 #ROC 커브
 from sklearn.metrics import roc_curve
+from sklearn.metrics import roc_auc_score
 
 fpr, tpr, thresholds = roc_curve(y, tree_clf.predict_proba(x)[:, 1])
 fpr, tpr, thresholds
@@ -234,30 +238,11 @@ fpr, tpr, thresholds
 plt.plot(fpr, tpr, 'o-', label="Logistic Regression")
 plt.plot([0, 1], [0, 1], 'k--', label="random guess")
 # plt.plot([fallout], [recall], 'ro', ms=10)
-plt.xlabel('위양성률(Fall-Out)')
-plt.ylabel('재현률(Recall)')
-plt.title('Receiver operating characteristic example')
+plt.xlabel('FPR')
+plt.ylabel('TPR(Recall)')
+plt.title('Dtree ROC Curve')
 plt.show()
 
-
-#%%
-""" 모든 입력변수를 이용한 분석"""
-tmp = sdot_data_total
-
-x = np.array(tmp[tmp.columns.drop(['종속', '시리얼번호', '온도차이', '온도비율차이'])].fillna(0).astype('float').values)
-y = np.array(tmp['종속'].values)
-y = y.reshape(y.shape[0], 1)
-
-depth_test = np.array([])
-for depth in range(1, 21, 1):
-    tree_clf = DecisionTreeClassifier(max_depth=depth)
-    tree_clf.fit(x, y)
-    score_tr = tree_clf.score(x, y)
-
-    depth_test = np.append(depth_test, [depth, score_tr])
-
-depth_test = depth_test.reshape(int(depth_test.shape[0] / 2), 2)
-
-print(depth_test)
-
+rand_score = roc_auc_score(y, tree_clf.predict_proba(x)[:,1])
+print('AUC : ' + str(rand_score))
 

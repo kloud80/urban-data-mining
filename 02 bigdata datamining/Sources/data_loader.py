@@ -24,8 +24,8 @@ os.chdir('02 Decision Tree/')
 
 # %%
 """sdot 위치정보와 공개 자료 가져오기"""
-sdot_loc = pd.read_excel('data/(공개용)도시데이터센서(S-DoT)_환경정보_설치_위치정보_210615.xlsx', sheet_name='S-DoT 설치 위치 정보', skiprows=3,
-                         header=[0, 1, 2], dtype='str')
+sdot_loc = pd.read_excel('data/(공개용)도시데이터센서(S-DoT)_환경정보_설치_위치정보_210615.xlsx', sheet_name='S-DoT 설치 위치 정보',
+                         skiprows=3, header=[0, 1, 2], dtype='str')
 
 cols = list(map(lambda x: tuple(map(lambda y: '' if 'Unnamed' in y else y, x)), sdot_loc.columns))
 sdot_loc.columns = list(map(lambda x: ''.join(x), cols))
