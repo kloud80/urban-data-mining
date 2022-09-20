@@ -9,5 +9,6 @@
 
 ***
 # 강의 영상
-[2주차 02 빅데이터의 이해](https://youtu.be/TnoNfaxUnpQ "동영상") (https://github.com/kloud80/urban-data-mining/blob/master/02%20bigdata%20datamining/002%20Bigdata.pdf "강의안")
-[2주차 03 데이터마이닝의 이해](https://youtu.be/eCyJZ5vJizM "동영상") (https://github.com/kloud80/urban-data-mining/blob/master/02%20bigdata%20datamining/003%20Data%20Mining.pdf "강의안")
+2주차 02 빅데이터의 이해 [동영상](https://youtu.be/TnoNfaxUnpQ "동영상"), [강의안](https://github.com/kloud80/urban-data-mining/blob/master/02%20bigdata%20datamining/002%20Bigdata.pdf "강의안")
+
+2주차 03 데이터마이닝의 이해 [동영상](https://youtu.be/eCyJZ5vJizM "동영상"), [강의안](https://github.com/kloud80/urban-data-mining/blob/master/02%20bigdata%20datamining/003%20Data%20Mining.pdf "강의안")
