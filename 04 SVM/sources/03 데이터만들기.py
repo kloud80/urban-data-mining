@@ -26,7 +26,7 @@ data 소스 파일 다운로드 : https://www.dropbox.com/s/gqa6jxfvevbu5yx/data
 
 #%%
 # 생활인구 집계구 shp 데이터 가져오기
-g_생활인구 = gpd.read_file('data/통계지역경계(2016년+기준)/집계구.shp', dtype='str')
+g_생활인구 = gpd.read_file('../data/통계지역경계(2016년+기준)/집계구.shp', dtype='str')
 g_생활인구 = g_생활인구.set_crs('EPSG:5179') #생활인구 집계구 좌표계
 g_생활인구 = g_생활인구.to_crs('EPSG:5174')  #지적도 좌표계로 변환
 g_생활인구.plot('ADM_NM', figsize=(20,20))
