@@ -157,7 +157,7 @@ from sklearn.tree import export_graphviz
 from graphviz import Source
 from sklearn.metrics import classification_report, confusion_matrix
 
-tree_clf = DecisionTreeClassifier(max_depth=2)
+tree_clf = DecisionTreeClassifier(max_depth=5)
 tree_clf.fit(x,y)
 
 score_tr = tree_clf.score(x, y)
@@ -213,7 +213,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 from sklearn.metrics import confusion_matrix
 
 
-tree_clf = DecisionTreeClassifier(max_depth=2)
+tree_clf = DecisionTreeClassifier(max_depth=6)
 tree_clf.fit(x,y)
 
 y_pred = tree_clf.predict(x)

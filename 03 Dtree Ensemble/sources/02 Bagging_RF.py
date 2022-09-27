@@ -105,11 +105,17 @@ print(sum(y_test) / len(y_test))
 model_baggingtree = BaggingClassifier(DecisionTreeClassifier(max_depth=3),
                           n_estimators=100)
 
+tree= DecisionTreeClassifier(max_depth=3)
+
+tree.fit(x_train, y_train)
+print(tree.score(x_train, y_train))
+print(tree.score(x_test, y_test))
+
 model_baggingtree.fit(x_train, y_train)
 print(model_baggingtree.score(x_train, y_train))
 print(model_baggingtree.score(x_test, y_test))
 
-m = model_baggingtree[2]
+m = model_baggingtree[0]
 dt_dot_data  = export_graphviz(m,
                                feature_names=tmp.columns.drop(['종속', '시리얼번호', '온도차이', '온도비율차이']),
                                class_names=['low', 'high'],         # 종속변수
@@ -150,7 +156,7 @@ print(model_RF.score(x_test, y_test))
 
 
 
-m = model_RF[0]
+m = model_RF[1]
 dt_dot_data  = export_graphviz(m,
                                feature_names=tmp.columns.drop(['종속', '시리얼번호', '온도차이', '온도비율차이']),
                                class_names=['저온', '고온'],         # 종속변수
