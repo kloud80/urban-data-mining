@@ -14,5 +14,5 @@
 2주차 03 데이터마이닝의 이해 [동영상](https://youtu.be/eCyJZ5vJizM "동영상"), [강의안](https://github.com/kloud80/urban-data-mining/blob/master/02%20bigdata%20datamining/003%20Data%20Mining.pdf "강의안")
 
 
-3주차 04 Decision Tree 의사결정나무와 이진분류 [동영상](https://youtu.be/GzaRpXVhYuk "동영상"), [강의안](03 Dtree Ensemble/006 Decision Tree.pdf "강의안")
+3주차 04 Decision Tree 의사결정나무와 이진분류 [동영상](https://youtu.be/GzaRpXVhYuk "동영상"), [강의안](https://github.com/kloud80/urban-data-mining/blob/master/03 Dtree Ensemble/006 Decision Tree.pdf "강의안")
 
