@@ -23,7 +23,7 @@ os.chdir('04 SVM/')
 #%%
 
 def SVM_margin(x, y, c, kernel='linear') :
-    classifier = SVC(kernel = kernel, C=c)
+    classifier = SVC(kernel = kernel, C=c,)
     classifier.fit(x, y) 
     classifier.decision_function(x)
     classifier.predict(x)
@@ -98,9 +98,10 @@ plt.yticks(np.arange(0, 6, step=1))
 plt.show()
 
 
-classifier = SVM_margin(x, y, c=1)
+classifier = SVM_margin(x, y, c=1e10)
 classifier = SVM_margin(x, y, c=10)
-classifier = SVM_margin(x, y, c=0.5)
+classifier = SVM_margin(x, y, c=1)
+classifier = SVM_margin(x, y, c=0.000001)
 classifier.coef_
 classifier.support_vectors_
 
@@ -137,7 +138,7 @@ plt.show()
 
 classifier = SVM_margin(x, y, c=1, kernel='linear')
 classifier = SVM_margin(x, y, c=100, kernel='rbf')
-classifier = SVM_margin(x, y, c=1, kernel='poly')
+classifier = SVM_margin(x, y, c=0.1, kernel='poly')
 classifier = SVM_margin(x, y, c=100, kernel='sigmoid')
 
 classifier = SVM_margin(x, y, c=100)

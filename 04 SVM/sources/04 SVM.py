@@ -29,7 +29,7 @@ data 소스 파일 다운로드 : https://www.dropbox.com/s/gqa6jxfvevbu5yx/data
 ---------------------------------------------"""
 #%%
 
-data = pd.read_csv('../data/생활인구_학습데이터.txt', sep='|', encoding='cp949')
+data = pd.read_csv('data/생활인구_학습데이터.txt', sep='|', encoding='cp949')
 data.dtypes
 data['TOT_REG_CD'] = data['TOT_REG_CD'].astype('str')
 data= data.fillna(0.0)
@@ -45,7 +45,7 @@ print('21년6월 100명 미만 집계구 수 : ' + str(data[data['21년6월'] < 
 data = data[data['18년6월'] >= 100]
 data = data[data['21년6월'] >= 100]
 
-g생활 = gpd.read_file('../data/results/g_생활인구.shp', encoding='cp949')
+g생활 = gpd.read_file('data/results/g_생활인구.shp', encoding='cp949')
 g생활 = g생활[g생활['TOT_REG_CD'].isin(data['TOT_REG_CD'])]
 
 fig, ax = plt.subplots(1, 1, figsize=(20,15))
