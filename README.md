@@ -17,6 +17,5 @@
 
 3주차 05 Bagging Tree & Random Forest [동영상](https://youtu.be/kHPoMB8A-Kk "동영상"), [강의안](https://github.com/kloud80/urban-data-mining/blob/master/03%20Dtree%20Ensemble/007%20Bagging_RF.pdf "강의안")
 
-4주차 06 Support Vector Machine [동영상](https://youtu.be/7Zk4BEseXqg "동영상"), [강의안](https://github.com/kloud80/urban-data-mining/blob/master/04%20SVM/009%20SVM.pdf "강의안")
+4주차 06 Support Vector Machine [동영상1](https://youtu.be/7Zk4BEseXqg "동영상1"), [동영상2](https://youtu.be/mwtajf5X9Rg "동영상2"), [강의안](https://github.com/kloud80/urban-data-mining/blob/master/04%20SVM/009%20SVM.pdf "강의안")
 
-4주차 06 Support Vector Machine Soft Margin & kernel trick [동영상](https://youtu.be/mwtajf5X9Rg "동영상"), [강의안](https://github.com/kloud80/urban-data-mining/blob/master/04%20SVM/009%20SVM.pdf "강의안")
