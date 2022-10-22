@@ -26,8 +26,8 @@ from keras import optimizers
 
 model = Sequential() #모델을 선언한다
 model.add(Dense(units=5, activation='relu', input_shape=(2,))) #은닉층 2개 추가, 활성함수 시그모이드
-model.add(Dense(units=2, activation='relu', input_shape=(2,))) #은닉층 2개 추가, 활성함수 시그모이드
-model.add(Dense(units=1, activation='linear')) # 출력층 1개 추가, 활성함수 시그모이드
+# model.add(Dense(units=2, activation='relu', input_shape=(2,))) #은닉층 2개 추가, 활성함수 시그모이드
+model.add(Dense(units=1, activation='sigmoid')) # 출력층 1개 추가, 활성함수 시그모이드
 
 model.summary() #모델 요약
 
@@ -67,3 +67,4 @@ model.predict(x_train)
 x_test = np.array([[1,2]])
 model.predict(x_test)
 
+model.weights[0]
