@@ -19,5 +19,5 @@
 
 4주차 06 Support Vector Machine [동영상1](https://youtu.be/7Zk4BEseXqg "동영상1"), [동영상2](https://youtu.be/mwtajf5X9Rg "동영상2"), [강의안](https://github.com/kloud80/urban-data-mining/blob/master/04%20SVM/009%20SVM.pdf "강의안")
 
-5주차 07 Neural Network [동영상1](https://youtu.be/ptlyl-FBnU4 "동영상1"), [강의안](https://github.com/kloud80/urban-data-mining/blob/master/05%20Neural%20Network/010%20Neural%20Network.pdf "강의안")
+5주차 07 Neural Network [동영상](https://youtu.be/ptlyl-FBnU4 "동영상1"), [강의안](https://github.com/kloud80/urban-data-mining/blob/master/05%20Neural%20Network/010%20Neural%20Network.pdf "강의안")
 
