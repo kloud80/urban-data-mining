@@ -26,3 +26,5 @@ Colab - git 연결하는 방법 [동영상](https://www.youtube.com/watch?v=dIYF
 6주차 08 CNN 합성곱 신경망 [동영상1](https://www.youtube.com/watch?v=AN9VjYFpdb8 "동영상1"), [동영상2](https://www.youtube.com/watch?v=XDFpBIafdxs "동영상2"), [강의안](https://github.com/kloud80/urban-data-mining/blob/master/06%20CNN/011%20CNN(%ED%95%A9%EC%84%B1%EA%B3%B1%EC%8B%A0%EA%B2%BD%EB%A7%9D).pdf "강의안")
 
 
+7주차 09 CNN 확장 [SOTA](https://www.youtube.com/watch?v=ZVPffneWJv4 "CNN SOTA"), [Detection](https://www.youtube.com/watch?v=9ljN_Nc99N4 "Detection"), [GAN](https://www.youtube.com/watch?v=KsF9Ht3zk8o "GAN"), [Diffusuion](https://www.youtube.com/watch?v=flS2RCRG66Q "Diffusuion"), [UNET](https://www.youtube.com/watch?v=8XWMg7CL8D0 "UNET"), [강의안](https://github.com/kloud80/urban-data-mining/blob/master/07%20CNN%202/012%20CNN%202.pdf "강의안")
+
